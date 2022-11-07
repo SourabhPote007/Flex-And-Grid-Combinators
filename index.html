@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Grid Assignment</title>
+      <style>
+            *
+            {
+                  box-sizing: border-box;
+            }
+            body
+            {
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+                  background: black;
+            }
+            h1
+            {
+                  text-align: center;
+                  font-size: 4em;
+                  font-family: monospace;
+                  color: aqua;
+            }
+            ul , li
+            { 
+                  list-style: none;
+                  padding: 0;
+                  margin: 5px;
+            }
+            .grid-wrap
+            {
+                  position: relative;
+                  margin: 0;
+                  padding: 5px;
+                  background: black;
+                  width: 100%;                  
+            }
+            .grid-wrap ul
+            {
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit,minmax(100px,auto));
+                  grid-auto-flow: dense;
+                  grid-gap:2px;
+                  margin: 0 auto;
+                  padding: 0;
+            }
+            .grid-wrap ul li
+            {
+                  position: relative;
+                  border: 1px solid white;
+            }
+            .grid-wrap ul li:nth-child(1)
+            {
+                  grid-row: span 1;
+                  grid-column: span 2;
+            }
+            .grid-wrap ul li:nth-child(2)
+            {
+                  grid-row: span 1;
+                  grid-column: span 1;
+            }
+            .grid-wrap ul li:nth-child(3)
+            {
+                  grid-row: span 1;
+                  grid-column: span 1;
+            }
+            .grid-wrap ul li:nth-child(4)
+            {
+                  grid-row: span 1;
+                  grid-column: span 1;
+            }
+            .grid-wrap ul li:nth-child(5)
+            {
+                  grid-row: span 1;
+                  grid-column: span 1;
+            }
+            .grid-wrap ul li:nth-child(6)
+            {
+                  grid-row: span 2;
+                  grid-column: span 2;
+            }
+            .grid-wrap ul li:nth-child(7)
+            {
+                  grid-row: span 1;
+                  grid-column: span 1;
+            }
+            .grid-wrap ul li:nth-child(8)
+            {
+                  grid-row: span 1;
+                  grid-column: span 1;
+            }
+            .grid-wrap ul li:nth-child(9)
+            {
+                  grid-row: span 2;
+                  grid-column: span 2;
+            }
+            .grid-wrap ul li:nth-child(10)
+            {
+                  grid-row: span 1;
+                  grid-column: span 1;
+            }
+            .grid-wrap ul li:nth-child(11)
+            {
+                  grid-row: span 1;
+                  grid-column: span 1;
+            }
+            .grid-wrap ul li:nth-child(12)
+            {
+                  grid-row: span 2;
+                  grid-column: span 2;
+            }
+            .grid-wrap ul li:nth-child(13)
+            {
+                  grid-row: span 2;
+                  grid-column: span 1;
+            }
+            .grid-wrap ul li:nth-child(14)
+            {
+                  grid-row: span 1;
+                  grid-column: span 1;
+            }
+            .grid-wrap ul li:nth-child(15)
+            {
+                  grid-row: span 3;
+                  grid-column: span 1;
+            }
+            .grid-wrap ul li:nth-child(16)
+            {
+                  grid-row: span 3;
+                  grid-column: span 1;
+            }
+            .grid-wrap ul li:nth-child(17)
+            {
+                  grid-row: span 3;
+                  grid-column: span 1;
+            }
+            .grid-wrap ul li:nth-child(18)
+            {
+                  grid-row: span 2;
+                  grid-column: span 1;
+            }
+            .grid-wrap ul li:nth-child(19)
+            {
+                  grid-row: span 2;
+                  grid-column: span 4;
+            }
+            .grid-wrap ul img
+            {
+                  width: 100%;
+                  height: 100%;
+                  object-fit:cover;
+            }
+      </style>
+</head>
+<body>
+      <h1>Responsive Grid Gallery </h1>
+      <h2 style="text-align: center;color: aqua;">Flex,Grid And Combinators : Challenge 4 :</h2>
+      <div class="grid-wrap">
+            <ul>
+                  <li><img src="/henry-be-IicyiaPYGGI-unsplash.jpg" alt=""></li>
+                  <li><img src="/goutham-krishna-h5wvMCdOV3w-unsplash.jpg" alt=""></li>
+                  <!-- <li><img src="/federico-respini-sYffw0LNr7s-unsplash.jpg" alt=""></li> -->
+                  <li><img src="/eberhard-grossgasteiger-y2azHvupCVo-unsplash.jpg" alt=""></li>
+                  <li><img src="/dawid-zawila--G3rw6Y02D0-unsplash.jpg" alt=""></li>
+                  <li><img src="/dave-hoefler-lsoogGC_5dg-unsplash.jpg" alt=""></li>
+                  <li><img src="/daniel-roe-lpjb_UMOyx8-unsplash.jpg" alt=""></li>
+                  <li><img src="/casey-horner-4rDCa5hBlCs-unsplash.jpg" alt=""></li>
+                  <li><img src="/blake-verdoorn-cssvEZacHvQ-unsplash.jpg" alt=""></li>
+                  <li><img src="/adam-kool-ndN00KmbJ1c-unsplash.jpg" alt=""></li>
+                  <li><img src="/vincent-van-zalinge-vUNQaTtZeOo-unsplash.jpg" alt=""></li>
+                  <li><img src="/v2osk-1Z2niiBPg5A-unsplash.jpg" alt=""></li>
+                  <li><img src="/tim-swaan-eOpewngf68w-unsplash.jpg" alt=""></li>
+                  <li><img src="/thomas-kelley-JoH60FhTp50-unsplash.jpg" alt=""></li>
+                  <li><img src="/samsung-memory-szoPfoxoKoQ-unsplash.jpg" alt=""></li>
+                  <li><img src="/robert-lukeman-_RBcxo9AU-U-unsplash.jpg" alt=""></li>
+                  <li><img src="/rachel-cook-mOcdke2ZQoE-unsplash.jpg" alt=""></li>
+                  <li><img src="/quino-al-mBQIfKlvowM-unsplash.jpg" alt=""></li>
+                  <li><img src="/qingbao-meng-01_igFr7hd4-unsplash.jpg" alt=""></li>
+                  <li><img src="/tim-swaan-eOpewngf68w-unsplash.jpg" alt=""></li>
+
+            </ul>
+      </div>
+</body>
+</html>
